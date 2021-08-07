@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+
+/*=====================通用样式定义========================*/
+body, th, td {
+    font-family: 'Microsoft YaHei','Hiragino Sans GB','宋体';
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background: #fff;
+}
+
+form,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+a,button{
+    cursor: pointer;
+}
+input,
+select {
+    border: 0 none;
+    box-sizing: border-box;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+button{
+    background: none;
+    border: none;
+}
+table,
+td {
+    font-size: 16px;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+.center{
+    position: relative;
+    margin: 0 auto;
+}
+/* 通用浮动属性 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: block;
+    visibility: hidden;
+    clear: both;
+    line-height: 0;
+    height: 0;
+}
+
+/*文字对齐方式*/
+
+.tc {
+    text-align: center;
+}
+
+.ind {
+    text-indent: 2em;
+}
+
+
+/*常用方法*/
+
+.b {
+    font-weight: bold;
+}
+
+.w80{
+    width: 80px;
+}
+.w165{
+    width: 165px;
+}
+/* 默认链接颜色 */
+
+p {
+    color: #333;
+}
+
+a {
+    color: #333;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #eb6b70;
+}
+
+
+/*清除链接虚框*/
+
+:focus {
+    outline: none;
+}
+
+
+/*针对Firfox*/
+
+a,
+area {
+    blr: expression(this.onFocus=this.blur())
+}
+
+
